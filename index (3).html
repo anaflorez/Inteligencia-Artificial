@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inteligencia Artificial</h1>
+    <div>
+        <img src="temas.jpeg">
+        <h2> Vimos que datos se repetían y buscamos graficar de cierto que nos brindara dicha información en una grafica de pastel</h2>
+    </div>
+
+    <div>
+        <img src="aplicaciones.jpeg">
+        <h2> yo utilice excel con formulas para sacar las palabras que estaban repetidas separando el texto y luego contando las palabras mas importantes de las inteligencias artificiales utilizando esta formula para contar las palabras que se repiten, SUMA(SI(NO(ESERROR(BUSCAR("chat"; A25:AY41)));1;0))+SUMA(SI(NO(ESERROR(BUSCAR("chat gpt"; A25:AY41)));1;0))</h2>
+    </div>
+
+    <div>
+        <img src="repetir.jpeg">
+        <h2> de manera manual tome los nombres de ias distintas y luego conté cuantas veces se repetía cada una, para al final juntar los valores y generar un anillo con Excel donde podemos ver que lo que vas se repite es chatgpt</h2>
+    </div>
+
+    <div>
+        <img src="tablas.jpeg">
+        <h2>SE REALIZO UTILIZANDO FORMULA DE EXCEL Y TABLAS DINAMICAS.</h2>
+    </div>
+
+    <div>
+        <img src="columnas.jpeg">
+        <h2> Elegimos la columna número 5 y sacamos las palabras repetidas con la ayuda de chatGPT y las rectificamos manualmente e hicimos lo mismo con las palabras únicas (que no se repetían)
+            Luego último hicimos la suma de las palabras repetidas y también sacamos el número de palabras únicas y por último hicimos un gráfico circular 3D con los números de las palabras repetidas</h2>
+    </div>
+
+    <div>
+        <img src="actividades.jpeg">
+        <h2> Se agruparon las actividades que eran similares y se contaron manualmente</h2>
+    </div>
+
+    
+    <div>
+        <img src="habilidades blandas.jpeg">
+        <h2> Nos dimos cuenta que hay varias coincidencias y todas apuntan hacia el hecho de que todos contamos con habilidades blandas suficientes y exactas para llevar a cabo un excelente trabajo en equipo.</h2>
+    </div>
+
+    <div>
+        <img src="redes neuronales.png">
+        <h2> CLASE 29/08/2024 
+            Redes Neuronales es un método de la inteligencia artificial que enseña a las computadoras a procesar datos de una manera similar a como lo hace el cerebro humano</h2>
+    </div>
+
+<!-- Tabla 3x3 -->
+<div>
+    <h2>Comparación de Algoritmos de busqueda </h2>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>DFS</th>
+            <th>BFS</th>
+        </tr>
+        <tr>
+            <td>LABERINTO A</td>
+            <td>265 NODOS</td>
+            <td>319 NODOS</td>
+        </tr>
+        <tr>
+            <td>LABERINTO B</td>
+            <td>227 NODOS</td>
+            <td>331 NODOS</td>
+        </tr>
+
+        
+    </table>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios de Código</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comentarios de Código</h1>
+
+    <h2>1) LIBRERÍAS</h2>
+    <pre><code>import tensorflow as tf
+import numpy as np</code></pre>
+
+    <h2>2) ARREGLO DE NÚMEROS EN CELSIUS Y FAHRENHEIT</h2>
+    <pre><code>celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)
+fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)</code></pre>
+
+    <h2>3) FRAMEWORK DE KERAS, CAPAS DE ENTRADA Y DE SALIDA</h2>
+    <pre><code>#capa = tf.keras.layers.Dense(units=1, input_shape=[1])
+#modelo = tf.keras.Sequential([capa])
+
+oculta1 = tf.keras.layers.Dense(units=3, input_shape=[1])
+oculta2 = tf.keras.layers.Dense(units=3)
+salida = tf.keras.layers.Dense(units=1)
+modelo = tf.keras.Sequential([oculta1, oculta2, salida])</code></pre>
+
+    <h2>4) PROCESAR LAS MATEMÁTICAS, OPTIMIZAR ADAM</h2>
+    <pre><code>modelo.compile(
+    optimizer=tf.keras.optimizers.Adam(0.1),
+    loss='mean_squared_error'
+)</code></pre>
+
+    <h2>5) ENTRENAR EL MODELO</h2>
+    <pre><code>print("Comenzando entrenamiento...")
+historial = modelo.fit(celsius, fahrenheit, epochs=1000, verbose=False)
+print("Modelo entrenado!")</code></pre>
+
+    <h2>6) RESULTADO DE LA FUNCIÓN</h2>
+    <pre><code>import matplotlib.pyplot as plt
+plt.xlabel("# Epoca")
+plt.ylabel("Magnitud de pérdida")
+plt.plot(historial.history["loss"])</code></pre>
+    <p>[&lt;matplotlib.lines.Line2D at 0x7fd4af0d3c90&gt;]</p>
+
+    <h2>7) HACEMOS UNA PREDICIÓN</h2>
+    <pre><code>print("Hagamos una predicción!")
+resultado = modelo.predict([100.0])
+print("El resultado es " + str(resultado) + " fahrenheit!")</code></pre>
+
+    <h2>8) FUNCIÓN PARA QUE IMPRIMA LOS VALORES</h2>
+    <pre><code>print("Variables internas del modelo")
+#print(capa.get_weights())
+print(oculta1.get_weights())
+print(oculta2.get_weights())
+print(salida.get_weights())</code></pre>
+
+    <h2>Variables internas del modelo</h2>
+    <pre><code>array([[-0.26688448,  0.81386125,  0.586152  ]], dtype=float32), array([2.6633756, 4.0691733, 4.0954447], dtype=float32)
+array([[ 1.0695152 , -0.8056518 ,  0.29660237],
+       [ 0.6458193 , -0.397615  ,  0.78575206],
+       [ 1.0877354 , -0.27557883,  0.81521314]], dtype=float32), array([ 4.1576405, -4.012629 ,  4.1956296], dtype=float32)
+array([[ 0.9644579],
+       [-0.6735023],
+       [ 0.7411787]], dtype=float32), array([3.8273103], dtype=float32)</code></pre>
+
+</body>
+</html>
+
+</div>
+</body>
+</html>
+</body>
+</html>
