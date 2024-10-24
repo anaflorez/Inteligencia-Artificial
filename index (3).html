@@ -4,169 +4,359 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
     <h1>Inteligencia Artificial</h1>
     <div>
-        <img src="temas.jpeg">
-        <h2> Vimos que datos se repetían y buscamos graficar de cierto que nos brindara dicha información en una grafica de pastel</h2>
+        <h2>Gráfica en pastel de los temas a ver</h2>
+        <img src="imagen1.jpg">
+        <h3>Vimos que datos se repetían y buscamos graficar de cierto que nos brindara dicha información en una gráfica de pastel</h3>     
     </div>
-
     <div>
-        <img src="aplicaciones.jpeg">
-        <h2> yo utilice excel con formulas para sacar las palabras que estaban repetidas separando el texto y luego contando las palabras mas importantes de las inteligencias artificiales utilizando esta formula para contar las palabras que se repiten, SUMA(SI(NO(ESERROR(BUSCAR("chat"; A25:AY41)));1;0))+SUMA(SI(NO(ESERROR(BUSCAR("chat gpt"; A25:AY41)));1;0))</h2>
+        <h2>Gráfica en pastel </h2>
+        <img src="imagen2.jpeg">
+        <h3>Se agruparon las actividades que eran similares y se contaron manualmente</h3>     
     </div>
-
     <div>
-        <img src="repetir.jpeg">
-        <h2> de manera manual tome los nombres de ias distintas y luego conté cuantas veces se repetía cada una, para al final juntar los valores y generar un anillo con Excel donde podemos ver que lo que vas se repite es chatgpt</h2>
+        <h2>Gráfica en pastel </h2>
+        <img src="imagen3.jpeg">
+        <h3>Elegimos la columna número 5 y sacamos las palabras repetidas con la ayuda de ChatGPT y las rectificamos manualmente e hicimos lo mismo con las palabras únicas (que no se repetían). Luego último hicimos la suma de las palabras repetidas y también sacamos el número de palabras únicas y por último hicimos un gráfico circular 3D con los números de las palabras repetidas.</h3>     
     </div>
-
     <div>
-        <img src="tablas.jpeg">
-        <h2>SE REALIZO UTILIZANDO FORMULA DE EXCEL Y TABLAS DINAMICAS.</h2>
+        <h2>Gráfica en pastel </h2>
+        <img src="imagen4.jpeg">
+        <h3>De manera manual tomé los nombres de las distintas y luego conté cuántas veces se repitió cada una, para al final juntar los valores y generar un anillo con Excel donde podemos ver que lo que más se repite es ChatGPT.</h3>     
     </div>
-
     <div>
-        <img src="columnas.jpeg">
-        <h2> Elegimos la columna número 5 y sacamos las palabras repetidas con la ayuda de chatGPT y las rectificamos manualmente e hicimos lo mismo con las palabras únicas (que no se repetían)
-            Luego último hicimos la suma de las palabras repetidas y también sacamos el número de palabras únicas y por último hicimos un gráfico circular 3D con los números de las palabras repetidas</h2>
+        <h2>Gráfica en pastel </h2>
+        <img src="imagen5.jpeg">
+        <h3>Yo utilicé Excel con fórmulas para sacar las palabras que estaban repetidas separando el texto y luego contando las palabras más importantes de las inteligencias artificiales utilizando esta fórmula para contar las palabras que se repiten: <code>SUMA(SI(NO(ESERROR(BUSCAR("chat"; A25:AY41)));1;0))+SUMA(SI(NO(ESERROR(BUSCAR("chat gpt"; A25:AY41)));1;0))</code></h3>     
     </div>
-
     <div>
-        <img src="actividades.jpeg">
-        <h2> Se agruparon las actividades que eran similares y se contaron manualmente</h2>
+        <h2>Gráfica en pastel </h2>
+        <img src="imagen6.jpeg">
+        <h3>Se realizó utilizando fórmulas de Excel y tablas dinámicas.</h3>     
     </div>
-
+    <div>
+        <h2>Gráfica en pastel </h2>
+        <img src="imagen7.jpeg">
+        <h3>David Sarria - Valentina Montealegre: Nos dimos cuenta que hay varias coincidencias y todas apuntan hacia el hecho de que todos contamos con habilidades blandas suficientes y exactas para llevar a cabo un excelente trabajo en equipo.</h3>     
+    </div>
+    <div>
+        <h2>Aprendizaje Inteligencia Artificial clase 29/08/2024 </h2>
+        <h3>La Inteligencia Artificial (IA) es la capacidad de las máquinas para imitar funciones cognitivas humanas como aprender, razonar y resolver problemas. Imagina a una computadora o un robot que puede entender el lenguaje, reconocer imágenes o tomar decisiones basadas en datos. La IA no es mágica, sino que se basa en algoritmos y grandes cantidades de información para "aprender" y mejorar con el tiempo. Su objetivo es hacer tareas de manera más eficiente o incluso ayudar a resolver problemas complejos que los humanos enfrentan.</h3>
+    </div>
     
+    <!-- Tabla 3x3 -->
     <div>
-        <img src="habilidades blandas.jpeg">
-        <h2> Nos dimos cuenta que hay varias coincidencias y todas apuntan hacia el hecho de que todos contamos con habilidades blandas suficientes y exactas para llevar a cabo un excelente trabajo en equipo.</h2>
+        <h1>Comparación de Algoritmos de busqueda PUNTO 3</h1>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>DFS</th>
+                <th>BFS</th>
+            </tr>
+            <tr>
+                <td>LABERINTO A</td>
+                <td>265 ESTADOS EXPLORADOS</td>
+                <td>319 ESTADOS EXPLORADOS</td>
+            </tr>
+            <tr>
+                <td>LABERINTO B</td>
+                <td>227 ESTADOS EXPLORADOS</td>
+                <td>331 ESTADOS EXPLORADOS</td>
+            </tr>
+        </table>
     </div>
+    <div class="container">
+        <h1>Explicación del Código PUNTO 4</h1>
 
-    <div>
-        <img src="redes neuronales.png">
-        <h2> CLASE 29/08/2024 
-            Redes Neuronales es un método de la inteligencia artificial que enseña a las computadoras a procesar datos de una manera similar a como lo hace el cerebro humano</h2>
+        <h2>1) Librerías</h2>
+        <p>
+            <code>import tensorflow as tf</code><br>
+            <code>import numpy as np</code>
+        </p>
+        <p>Importa la biblioteca TensorFlow, que es usada para crear y entrenar modelos de aprendizaje automático, e importa la biblioteca NumPy, que proporciona soporte para arrays y operaciones matemáticas en Python.</p>
+
+        <h2>2) Arreglo de Números en Celsius y Fahrenheit</h2>
+        <p>
+            <code>celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)</code><br>
+            <code>fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)</code>
+        </p>
+        <p>Crea un arreglo unidimensional que contiene temperaturas en Celsius y otro para las temperaturas correspondientes en Fahrenheit.</p>
+
+        <h2>3) Framework de Keras, Capas de Entrada y de Salida</h2>
+        <p>
+            <code>#capa = tf.keras.layers.Dense(units=1, input_shape=[1])</code><br>
+            <code>oculta1 = tf.keras.layers.Dense(units=3, input_shape=[1])</code><br>
+            <code>oculta2 = tf.keras.layers.Dense(units=3)</code><br>
+            <code>salida = tf.keras.layers.Dense(units=1)</code><br>
+            <code>modelo = tf.keras.Sequential([oculta1, oculta2, salida])</code>
+        </p>
+        <p>Se crean capas de entrada para definir los datos que alimentan al modelo y capas de salida que producen las predicciones finales.</p>
+
+        <h2>4) Procesar las Matemáticas, Optimizar Adam</h2>
+        <p>
+            <code>modelo.compile(</code><br>
+            <code>    optimizer=tf.keras.optimizers.Adam(0.1),</code><br>
+            <code>    loss='mean_squared_error'</code><br>
+            <code>)</code>
+        </p>
+        <p>Configura el modelo para el entrenamiento usando el optimizador Adam con una tasa de aprendizaje de 0.1 y la función de pérdida de error cuadrático medio.</p>
+
+        <h2>5) Entrenar el Modelo</h2>
+        <p>
+            <code>print("Comenzando entrenamiento...")</code><br>
+            <code>historial = modelo.fit(celsius, fahrenheit, epochs=1000, verbose=False)</code><br>
+            <code>print("Modelo entrenado!")</code>
+        </p>
+        <p>Inicia el entrenamiento del modelo con los datos de Celsius y Fahrenheit durante 1000 épocas y muestra un mensaje de finalización.</p>
+
+        <h2>6) Resultado de la Función</h2>
+        <p>
+            <code>import matplotlib.pyplot as plt</code><br>
+            <code>plt.xlabel("# Epoca")</code><br>
+            <code>plt.ylabel("Magnitud de pérdida")</code><br>
+            <code>plt.plot(historial.history["loss"])</code>
+        </p>
+        <p>Importa Matplotlib para graficar, configura las etiquetas del eje x y del eje y, y grafica la evolución de la pérdida del modelo durante el entrenamiento.</p>
+
+        <h2>7) Hacemos una Predicción</h2>
+        <p>
+            <code>print("Hagamos una predicción!")</code><br>
+            <code>resultado = modelo.predict([100.0])</code><br>
+            <code>print("El resultado es " + str(resultado) + " fahrenheit!")</code>
+        </p>
+        <p>Indica que se realizará una predicción, utiliza el modelo para predecir la temperatura en Fahrenheit y muestra el resultado.</p>
+
+        <h2>8) Función para que Imprima los Valores</h2>
+        <p>
+            <code>print("Variables internas del modelo")</code><br>
+            <code>#print(capa.get_weights())</code><br>
+            <code>print(oculta1.get_weights())</code><br>
+            <code>print(oculta2.get_weights())</code><br>
+            <code>print(salida.get_weights())</code>
+        </p>
+        <p>Indica que se mostrarán las variables internas del modelo y muestra los pesos de las capas ocultas y de salida.</p>
     </div>
-
-<!-- Tabla 3x3 -->
-<div>
-    <h2>Comparación de Algoritmos de busqueda </h2>
-    <table border="1">
-        <tr>
-            <th></th>
-            <th>DFS</th>
-            <th>BFS</th>
-        </tr>
-        <tr>
-            <td>LABERINTO A</td>
-            <td>265 NODOS</td>
-            <td>319 NODOS</td>
-        </tr>
-        <tr>
-            <td>LABERINTO B</td>
-            <td>227 NODOS</td>
-            <td>331 NODOS</td>
-        </tr>
-
-        
-    </table>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios de Código</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #555;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Comentarios de Código</h1>
-
-    <h2>1) LIBRERÍAS</h2>
-    <pre><code>import tensorflow as tf
-import numpy as np</code></pre>
-
-    <h2>2) ARREGLO DE NÚMEROS EN CELSIUS Y FAHRENHEIT</h2>
-    <pre><code>celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)
-fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)</code></pre>
-
-    <h2>3) FRAMEWORK DE KERAS, CAPAS DE ENTRADA Y DE SALIDA</h2>
-    <pre><code>#capa = tf.keras.layers.Dense(units=1, input_shape=[1])
-#modelo = tf.keras.Sequential([capa])
-
-oculta1 = tf.keras.layers.Dense(units=3, input_shape=[1])
-oculta2 = tf.keras.layers.Dense(units=3)
-salida = tf.keras.layers.Dense(units=1)
-modelo = tf.keras.Sequential([oculta1, oculta2, salida])</code></pre>
-
-    <h2>4) PROCESAR LAS MATEMÁTICAS, OPTIMIZAR ADAM</h2>
-    <pre><code>modelo.compile(
-    optimizer=tf.keras.optimizers.Adam(0.1),
-    loss='mean_squared_error'
-)</code></pre>
-
-    <h2>5) ENTRENAR EL MODELO</h2>
-    <pre><code>print("Comenzando entrenamiento...")
-historial = modelo.fit(celsius, fahrenheit, epochs=1000, verbose=False)
-print("Modelo entrenado!")</code></pre>
-
-    <h2>6) RESULTADO DE LA FUNCIÓN</h2>
-    <pre><code>import matplotlib.pyplot as plt
-plt.xlabel("# Epoca")
-plt.ylabel("Magnitud de pérdida")
-plt.plot(historial.history["loss"])</code></pre>
-    <p>[&lt;matplotlib.lines.Line2D at 0x7fd4af0d3c90&gt;]</p>
-
-    <h2>7) HACEMOS UNA PREDICIÓN</h2>
-    <pre><code>print("Hagamos una predicción!")
-resultado = modelo.predict([100.0])
-print("El resultado es " + str(resultado) + " fahrenheit!")</code></pre>
-
-    <h2>8) FUNCIÓN PARA QUE IMPRIMA LOS VALORES</h2>
-    <pre><code>print("Variables internas del modelo")
-#print(capa.get_weights())
-print(oculta1.get_weights())
-print(oculta2.get_weights())
-print(salida.get_weights())</code></pre>
-
-    <h2>Variables internas del modelo</h2>
-    <pre><code>array([[-0.26688448,  0.81386125,  0.586152  ]], dtype=float32), array([2.6633756, 4.0691733, 4.0954447], dtype=float32)
-array([[ 1.0695152 , -0.8056518 ,  0.29660237],
-       [ 0.6458193 , -0.397615  ,  0.78575206],
-       [ 1.0877354 , -0.27557883,  0.81521314]], dtype=float32), array([ 4.1576405, -4.012629 ,  4.1956296], dtype=float32)
-array([[ 0.9644579],
-       [-0.6735023],
-       [ 0.7411787]], dtype=float32), array([3.8273103], dtype=float32)</code></pre>
-
-</body>
-</html>
-</div>
     <div>
         <h2>encuesta 10 de octubre</h2>
         <img src="perfil de interes.jpeg">
         <h3>segun la encuenta cuento con un perfil de investigacion,artistico y empresarial</h3>     
     </div>
-</body>
-</html>
+    <div>
+        <h2>Punto 5</h2>
+        <p>
+            import itertools  # Importa la biblioteca itertools, que proporciona funciones para crear iteradores eficientes.<br><br>
+            
+            class Sentence():<br>
+                """Clase base para las oraciones lógicas."""<br><br>
+            
+                def evaluate(self, model):<br>
+                    """Evalúa la oración lógica dada un modelo."""<br>
+                    raise Exception("nothing to evaluate")  # Lanza una excepción si no se ha implementado la evaluación.<br><br>
+            
+                def formula(self):<br>
+                    """Devuelve la representación en cadena de la fórmula lógica."""<br>
+                    return ""  # Devuelve una cadena vacía como representación.<br><br>
+            
+                def symbols(self):<br>
+                    """Devuelve un conjunto de todos los símbolos en la oración lógica."""<br>
+                    return set()  # Devuelve un conjunto vacío.<br><br>
+            
+                @classmethod<br>
+                def validate(cls, sentence):<br>
+                    """Valida que el argumento sea una instancia de Sentence."""<br>
+                    if not isinstance(sentence, Sentence):<br>
+                        raise TypeError("must be a logical sentence")  # Lanza una excepción si no es una oración lógica.<br><br>
+            
+                @classmethod<br>
+                def parenthesize(cls, s):<br>
+                    """Agrega paréntesis a una expresión si no están ya presentes."""<br>
+                    def balanced(s):<br>
+                        """Verifica si una cadena tiene paréntesis balanceados."""<br>
+                        count = 0  # Contador para paréntesis.<br>
+                        for c in s:<br>
+                            if c == "(":<br>
+                                count += 1  # Incrementa el contador para cada '('.<br>
+                            elif c == ")":<br>
+                                if count <= 0:<br>
+                                    return False  # Si hay más ')' que '(', devuelve False.<br>
+                                count -= 1  # Decrementa el contador para cada ')'.<br>
+                        return count == 0  # Devuelve True si los paréntesis están balanceados.<br><br>
+            
+                    # Verifica si 's' no tiene longitud, es alfabético, o está balanceado.<br>
+                    if not len(s) or s.isalpha() or (<br>
+                        s[0] == "(" and s[-1] == ")" and balanced(s[1:-1])<br>
+                    ):<br>
+                        return s  # Devuelve 's' si está balanceado o es un solo símbolo.<br>
+                    else:<br>
+                        return f"({s})"  # Agrega paréntesis a 's' si es necesario.<br><br>
+            
+            class Symbol(Sentence):<br>
+                """Clase que representa una variable lógica."""<br><br>
+            
+                def __init__(self, name):<br>
+                    self.name = name  # Asigna el nombre del símbolo.<br><br>
+            
+                def __eq__(self, other):<br>
+                    return isinstance(other, Symbol) and self.name == other.name  # Compara si son iguales.<br><br>
+            
+                def __hash__(self):<br>
+                    return hash(("symbol", self.name))  # Devuelve el hash del símbolo.<br><br>
+            
+                def __repr__(self):<br>
+                    return self.name  # Devuelve la representación en cadena del símbolo.<br><br>
+            
+                def evaluate(self, model):<br>
+                    """Evalúa el símbolo en el modelo proporcionado."""<br>
+                    try:<br>
+                        return bool(model[self.name])  # Devuelve el valor del símbolo en el modelo.<br>
+                    except KeyError:<br>
+                        raise EvaluationException(f"variable {self.name} not in model")  # Lanza una excepción si el símbolo no está en el modelo.<br><br>
+            
+                def formula(self):<br>
+                    """Devuelve la representación en cadena del símbolo."""<br>
+                    return self.name  # Devuelve el nombre del símbolo.<br><br>
+            
+                def symbols(self):<br>
+                    """Devuelve un conjunto que contiene el símbolo."""<br>
+                    return {self.name}  # Devuelve un conjunto con el símbolo.<br><br>
+            
+            class Not(Sentence):<br>
+                """Clase que representa la negación lógica."""<br><br>
+            
+                def __init__(self, operand):<br>
+                    Sentence.validate(operand)  # Valida el operando.<br>
+                    self.operand = operand  # Asigna el operando.<br><br>
+            
+                def __eq__(self, other):<br>
+                    return isinstance(other, Not) and self.operand == other.operand  # Compara si son iguales.<br><br>
+            
+                def __hash__(self):<br>
+                    return hash(("not", hash(self.operand)))  # Devuelve el hash de la negación.<br><br>
+            
+                def __repr__(self):<br>
+                    return f"Not({self.operand})"  # Devuelve la representación en cadena de la negación.<br><br>
+            
+                def evaluate(self, model):<br>
+                    """Evalúa la negación del operando."""<br>
+                    return not self.operand.evaluate(model)  # Devuelve el valor opuesto del operando.<br><br>
+            
+                def formula(self):<br>
+                    """Devuelve la representación en cadena de la negación."""<br>
+                    return "¬" + Sentence.parenthesize(self.operand.formula())  # Agrega el símbolo de negación y parentetiza.<br><br>
+            
+                def symbols(self):<br>
+                    """Devuelve los símbolos del operando."""<br>
+                    return self.operand.symbols()  # Devuelve los símbolos del operando.<br><br>
+            
+            class And(Sentence):<br>
+                """Clase que representa la conjunción lógica (AND)."""<br><br>
+            
+                def __init__(self, *conjuncts):<br>
+                    for conjunct in conjuncts:<br>
+                        Sentence.validate(conjunct)  # Valida cada conjuncto.<br>
+                    self.conjuncts = list(conjuncts)  # Almacena los conjunctos en una lista.<br><br>
+            
+                def __eq__(self, other):<br>
+                    return isinstance(other, And) and self.conjuncts == other.conjuncts  # Compara si son iguales.<br><br>
+            
+                def __hash__(self):<br>
+                    return hash(<br>
+                        ("and", tuple(hash(conjunct) for conjunct in self.conjuncts))  # Devuelve el hash de la conjunción.<br>
+                    )<br><br>
+            
+                def __repr__(self):<br>
+                    conjunctions = ", ".join(<br>
+                        [str(conjunct) for conjunct in self.conjuncts]  # Convierte cada conjuncto a cadena.<br>
+                    )<br>
+                    return f"And({conjunctions})"  # Devuelve la representación en cadena de la conjunción.<br><br>
+            
+                def add(self, conjunct):<br>
+                    """Agrega un nuevo conjuncto a la conjunción."""<br>
+                    Sentence.validate(conjunct)  # Valida el nuevo conjuncto.<br>
+                    self.conjuncts.append(conjunct)  # Añade el conjuncto a la lista.<br><br>
+            
+                def evaluate(self, model):<br>
+                    """Evalúa si todos los conjunctos son verdaderos."""<br>
+                    return all(conjunct.evaluate(model) for conjunct in self.conjuncts)  # Evalúa y devuelve True solo si todos son verdaderos.<br><br>
+            
+                def formula(self):<br>
+                    """Devuelve la representación en cadena de la conjunción."""<br>
+                    if len(self.conjuncts) == 1:<br>
+                        return self.conjuncts[0].formula()  # Devuelve la fórmula si solo hay un conjuncto.<br>
+                    return " ∧ ".join([Sentence.parenthesize(conjunct.formula())  # Une las fórmulas de los conjunctos con '∧'.<br>
+                                       for conjunct in self.conjuncts])<br><br>
+            
+                def symbols(self):<br>
+                    """Devuelve un conjunto de todos los símbolos en la conjunción."""<br>
+                    return set.union(*[conjunct.symbols() for conjunct in self.conjuncts])  # Une todos los símbolos de los conjunctos.<br><br>
+            
+            class Or(Sentence):<br>
+                """Clase que representa la disyunción lógica (OR)."""<br><br>
+            
+                def __init__(self, *disjuncts):<br>
+                    for disjunct in disjuncts:<br>
+                        Sentence.validate(disjunct)  # Valida cada disyunto.<br>
+                    self.disjuncts = list(disjuncts)  # Almacena los disyuntos en una lista.<br><br>
+            
+                def __eq__(self, other):<br>
+                    return isinstance(other, Or) and self.disjuncts == other.disjuncts  # Compara si son iguales.<br><br>
+            
+                def __hash__(self):<br>
+                    return hash(<br>
+                        ("or", tuple(hash(disjunct) for disjunct in self.disjuncts))  # Devuelve el hash de la disyunción.<br>
+                    )<br><br>
+            
+                def __repr__(self):<br>
+                    disjunctions = ", ".join(<br>
+                        [str(disjunct) for disjunct in self.disjuncts]  # Convierte cada disyunto a cadena.<br>
+                    )<br>
+                    return f"Or({disjunctions})"  # Devuelve la representación en cadena de la disyunción.<br><br>
+            
+                def add(self, disjunct):<br>
+                    """Agrega un nuevo disyunto a la disyunción."""<br>
+                    Sentence.validate(disjunct)  # Valida el nuevo disyunto.<br>
+                    self.disjuncts.append(disjunct)  # Añade el disyunto a la lista.<br><br>
+            
+                def evaluate(self, model):<br>
+                    """Evalúa si al menos uno de los disyuntos es verdadero."""<br>
+                    return any(disjunct.evaluate(model) for disjunct in self.disjuncts)  # Evalúa y devuelve True si al menos uno es verdadero.<br><br>
+            
+                def formula(self):<br>
+                    """Devuelve la representación en cadena de la disyunción."""<br>
+                    if len(self.disjuncts) == 1:<br>
+                        return self.disjuncts[0].formula()  # Devuelve la fórmula si solo hay un disyunto.<br>
+                    return " ∨ ".join([Sentence.parenthesize(disjunct.formula())  # Une las fórmulas de los disyuntos con '∨'.<br>
+                                       for disjunct in self.disjuncts])<br><br>
+            
+                def symbols(self):<br>
+                    """Devuelve un conjunto de todos los símbolos en la disyunción."""<br>
+                    return set.union(*[disjunct.symbols() for disjunct in self.disjuncts])  # Une todos los símbolos de los disyuntos.<br><br>
+            
+            class EvaluationException(Exception):<br>
+                """Excepción para errores en la evaluación."""<br>
+                pass  # Define una excepción personalizada sin ningún comportamiento adicional.<br>
+            </p>
+    </div>
+    <h2>punto 6</h2>
+    <p>
+        from logic import *<br><br>
+        
+        lluvia = Symbol("lluvia")<br>
+        BBC = Symbol("BBC")<br>
+        Unimayor = Symbol("Unimayor")<br><br>
+        
+        knowledge = And(<br>
+            Implication(Not(lluvia), BBC),<br>
+            Or(BBC, Unimayor),<br>
+            Not(And(BBC, Unimayor)),<br>
+            Unimayor<br>
+        )<br><br>
+        
+        print(model_check(knowledge, lluvia))<br>
+        </p>
 </body>
 </html>
